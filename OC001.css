@@ -1,0 +1,67 @@
+/*
+stylesheet
+
+ratachée à OC001.html
+*/
+
+h1, em /*cible les balises h1 et em*/
+{
+    color: palevioletred; /*couleur des balises ciblées*/
+}
+
+.introduction
+{
+    color: royalblue;
+}
+
+.salutations
+{
+    color: plum;
+}
+
+p , div
+{
+    font-size: 1.0em; /*on définit la taille du texte dans les balises <p> et on détermine les polices*/
+    font-family: 'courier new', georgia, arial, serif;
+    text-align: justify;
+}
+
+@font-face { /*on ajoute une police au fichier CSS pour la donner à des balises*/
+    font-family: 'cac_champagneregular'; /*nom de la police dans le fichier*/
+    src: url('polices/cac_champagneregular/cac_champagne-webfont.woff'); /*on détermine la police de base puis les variantes*/
+    src: url('polices/cac_champagneregular/cac_champagne-webfont.woff?#iefix') format('woff'),
+         url('polices/cac_champagneregular/cac_champagne-webfont.eot') format('eot');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1
+{
+    font-family: 'cac_champagneregular';
+    font-size: 6.0em;
+    text-decoration: underline;
+    text-align: center;
+}
+
+h2
+{
+    font-style: oblique; /*détermine le style du texte : italique, normal,... */
+    text-align: right;
+    text-decoration: overline;
+}
+
+em
+{
+    font-style: normal;
+    font-weight: bold;
+}
+
+.imageflottante /*référence à la class="imageflottante"*/
+{
+    float: right;
+}
+
+.dessous
+{
+    clear: both;
+}

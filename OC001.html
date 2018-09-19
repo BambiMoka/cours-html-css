@@ -1,0 +1,84 @@
+<!DOCTYPE html><!--indique qu'il s'agit d'une page web en HTML-->
+
+<html><!--balise principale qui englobe tout le contenu de la page-->
+    <head><!--infos générales sur la page, non affichées mais importantes-->
+
+        <meta charset="utf-8"/><!--indique l'encodage utilisé dans le fichier .html-->
+        <link rel="stylesheet" href="OC001.css"/> <!--link le fichier .css-->
+        <title>OC001</title><!--titre de la page (onglet, résultats de recherche)-->
+    </head>
+
+    <body><!--partie principale, ce qui sera affiché-->
+        <h1>
+            Bienvenue
+        </h1> <!--Titre principal-->
+
+        <p class="introduction">
+            Bonjour et <span class="salutations">bienvenue</span> sur mon site !<br/><!--balise retour à la ligne-->
+            Ceci est mon premier test, <em><!--mise en valeur, peu important-->soyez indulgents</em>.
+        </p><!--balise de paragraphe-->
+        <p>
+            Pour passer directement aux choses sérieuses, cliquez <a href="#momiji" title="CLIQUE !!"><!--ancrage + infobulle-->ici</a>.<br/>
+            Sinon, voici la photo d'une montagne. (De rien)
+        </p>
+        <p>
+            <img src="images/montagne.jpg" alt="Ceci est une montagne." title="Je sais, c'est beau. Ne me remerciez pas."/>
+        </p>
+        <!--insérer une image : source, texte alternatif + infobulle-->
+        
+        <h2>
+            Fonction du site
+        </h2> <!--Sous-titre principal-->
+
+        <p>
+            <img src="images/derp.jpg" class="imageflottante" alt="derp" title="Moi lisant mon cours sur le CSS"/>
+            Ce site me permettra de <strong><!--mise en valeur, important-->mettre en pratique</strong>
+            mes cours sur la création de sites web.<br/>
+            <div class="dessous">Voici les langages que je vais utiliser pour créer cette page :</div><br/>
+
+            <ul><!--création d'une liste non-ordonnée ou liste à puces-->
+                <li>HTML5</li><!--Element / puce d'une liste (valable pour toute liste sauf définition)-->
+                <li>CSS3</li>
+            </ul>
+        </p>
+        <p>
+            Cliquez <a href="OC002.html"><!--lien relatif-->ici</a> pour vous rendre sur la page 2.
+        </p>    
+
+
+        <h2 id="momiji">
+            <!--création d'une ancre nommée "momiji"-->Momiji le Lapin Nain
+        </h2>
+
+        <p>
+            Ceci est une page web dédiée à <mark><!--ressort visuel-->Momiji</mark>.<br/>
+            Momiji est un lapin nain de trois ans qui vit avec mon compagnon et moi depuis juin 2015.
+        </p>
+        <p>
+            Vous pourrez trouver des photos de Momiji (ainsi que d'autre type de contenu) sur mon
+            <a href="https://www.instagram.com/bambimoka"><!--lien absolu /site externe-->instagram</a>.<br/>
+            <a href="mailto:louise.h.michel@gmail.com"><!--lien pour envoyer un mail-->contactez moi</a>
+        </p>
+
+        <h3>Régime alimentaire</h3>
+
+        <figure><!--créer une figure pour illustrer le texte-->
+            <img src="images/lapin_sang.jpg" alt="Lapin Angora"/>
+            <figcaption>Lapin Angora se délectant du sang de ses maîtres.</figcaption>
+            <!--ajouter une légende à la figure-->
+        </figure>
+
+        <p>
+            Ceci est une liste <strong>non-exhaustive</strong> des aliments préférés de Momiji.<br/>
+            <ol><!--création d'une liste ordonnée ou énumération-->
+                <li>Les claquettes Adidas de Kevin</li>
+                <li>Les charentaises de Kevin</li>
+                <li>La sacoche Nike de Kevin</li>
+                <li>Les vêtements de Kevin</li>
+                <li>Du carton pour emmerder Kevin</li>
+                <li>Bien d'autres encore...</li>
+            </ol>
+        </p>
+    
+    </body>
+</html>
