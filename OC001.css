@@ -57,10 +57,14 @@ h1
 h2
 {
     font-style: oblique; /*détermine le style du texte : italique, normal,... */
-    text-align: right;
+    text-align: center;
     border: 3px navajowhite double;
     border-radius: 8px;
-    box-shadow: -6px 6px 5px navajowhite; 
+    box-shadow: -6px 6px 5px navajowhite;
+    width: 50%;
+    min-width: 400px;
+    padding: 12px 6px;
+    margin: auto;
 }
 
 em
@@ -83,6 +87,10 @@ ol /*ici les <ol> auront une bordure en pointillés de 4px couleur peru*/
 {
     border: peru 4px dotted;
     text-shadow: 2px 2px 2px navajowhite;
+    width: 50%;
+    min-width: 400px;
+    height: 50px;
+    overflow: auto;
 }
 
 /*p
