@@ -79,7 +79,7 @@ em
     clear: both;
 }
 
-ul , ol /*ici les <ul> auront une bordure en pointillés de 4px couleur peru*/
+ol /*ici les <ol> auront une bordure en pointillés de 4px couleur peru*/
 {
     border: peru 4px dotted;
     text-shadow: 2px 2px 2px navajowhite;

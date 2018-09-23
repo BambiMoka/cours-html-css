@@ -9,75 +9,92 @@
     </head>
 
     <body><!--partie principale, ce qui sera affiché-->
-        <h1>
-            Bienvenue
-        </h1> <!--Titre principal-->
+        <header>
+            <h1>
+                Bienvenue
+            </h1> <!--Titre principal-->
+        </header>    
 
-        <p class="introduction">
-            Bonjour et <span class="salutations">bienvenue</span> sur mon site !<br/><!--balise retour à la ligne-->
-            Ceci est mon premier test, <em><!--mise en valeur, peu important-->soyez indulgents</em>.
-        </p><!--balise de paragraphe-->
-        <p>
-            Pour passer directement aux choses sérieuses, cliquez <a href="#momiji" title="CLIQUE !!"><!--ancrage + infobulle-->ici</a>.<br/>
-            Sinon, voici la photo d'une montagne. (De rien)
-        </p>
-        <p>
-            <img src="images/montagne.jpg" alt="Ceci est une montagne." title="Je sais, c'est beau. Ne me remerciez pas."/>   
-        </p>
-        <!--insérer une image : source, texte alternatif + infobulle-->
+        <section>
+            <p class="introduction">
+                Bonjour et <span class="salutations">bienvenue</span> sur mon site !<br/><!--balise retour à la ligne-->
+                Ceci est mon premier test, <em><!--mise en valeur, peu important-->soyez indulgents</em>.
+            </p><!--balise de paragraphe-->
+            <p>
+                Pour passer directement aux choses sérieuses, cliquez <a href="#momiji" title="CLIQUE !!"><!--ancrage + infobulle-->ici</a>.<br/>
+                Sinon, voici la photo d'une montagne. (De rien)
+            </p>
+            <p>
+                <img src="images/montagne.jpg" alt="Ceci est une montagne." title="Je sais, c'est beau. Ne me remerciez pas."/>   
+            </p>
+            <!--insérer une image : source, texte alternatif + infobulle-->
+        </section>
         
-        <h2>
-            Fonction du site *
-        </h2> <!--Sous-titre principal-->
+        <nav>
+            <ul>
+                <li><a href="#momiji">Momiji le Lapin Nain</a></li>
+                <ul>
+                    <li><a href="#regime">Régime Alimentaire</a></li>
+                </ul>
+                <li><a href="OC002.html">Page 2</a></li>
+            </ul>
+        </nav>
+        
+        <aside>
+            <h2>
+                Fonction du site *
+            </h2> <!--Sous-titre principal-->
 
-        <p>
-            <img src="images/derp.jpg" class="imageflottante" alt="derp" title="Moi lisant mon cours sur le CSS"/>
-            Ce site me permettra de <strong><!--mise en valeur, important-->mettre en pratique</strong>
-            mes cours sur la création de sites web.
-        </p>
-        <div class="dessous">Voici les langages que je vais utiliser pour créer cette page :</div>
-        <ul><!--création d'une liste non-ordonnée ou liste à puces-->
-            <li>HTML5</li><!--Element / puce d'une liste (valable pour toute liste sauf définition)-->
-            <li>CSS3</li>
-        </ul>
-        <p>
-            Cliquez <a href="OC002.html"><!--lien relatif-->ici</a> pour vous rendre sur la page 2.
-        </p>    
+            <p>
+                <img src="images/derp.jpg" class="imageflottante" alt="derp" title="Moi lisant mon cours sur le CSS"/>
+                Ce site me permettra de <strong><!--mise en valeur, important-->mettre en pratique</strong>
+                mes cours sur la création de sites web.
+            </p>
+            <div class="dessous">Voici les langages que je vais utiliser pour créer cette page :</div>
+            <ul><!--création d'une liste non-ordonnée ou liste à puces-->
+                <li>HTML5</li><!--Element / puce d'une liste (valable pour toute liste sauf définition)-->
+                <li>CSS3</li>
+            </ul>
+        </aside>        
 
 
-        <h2 id="momiji">
-            <!--création d'une ancre nommée "momiji"-->Momiji le Lapin Nain *
-        </h2>
+        <section>
+            <h2 id="momiji">
+                <!--création d'une ancre nommée "momiji"-->Momiji le Lapin Nain *
+            </h2>
 
-        <p>
-            Ceci est une page web dédiée à <mark><!--ressort visuel-->Momiji</mark>.<br/>
-            Momiji est un lapin nain de trois ans qui vit avec mon compagnon et moi depuis juin 2015.
-        </p>
-        <p>
-            Vous pourrez trouver des photos de Momiji (ainsi que d'autre type de contenu) sur mon
-            <a href="https://www.instagram.com/bambimoka"><!--lien absolu /site externe-->instagram</a>.<br/>
-            <a href="mailto:louise.h.michel@gmail.com"><!--lien pour envoyer un mail-->contactez moi</a>
-        </p>
+            <p>
+                Ceci est une page web dédiée à <mark><!--ressort visuel-->Momiji</mark>.<br/>
+                Momiji est un lapin nain de trois ans qui vit avec mon compagnon et moi depuis juin 2015.
+            </p>
+            <p>
+                Vous pourrez trouver des photos de Momiji (ainsi que d'autre type de contenu) sur mon
+                <a href="https://www.instagram.com/bambimoka"><!--lien absolu /site externe-->instagram</a>.<br/>
+                <a href="mailto:louise.h.michel@gmail.com"><!--lien pour envoyer un mail-->contactez moi</a>
+            </p>  
 
-        <h3>Régime alimentaire</h3>
+            <article>
+                <h3 id="regime">Régime alimentaire</h3>
 
-        <figure><!--créer une figure pour illustrer le texte-->
-            <img src="images/lapin_sang.jpg" alt="Lapin Angora"/>
-            <figcaption>Lapin Angora se délectant du sang de ses maîtres.</figcaption>
-            <!--ajouter une légende à la figure-->
-        </figure>
+                <figure><!--créer une figure pour illustrer le texte-->
+                    <img src="images/lapin_sang.jpg" alt="Lapin Angora"/>
+                    <figcaption>Lapin Angora se délectant du sang de ses maîtres.</figcaption>
+                    <!--ajouter une légende à la figure-->
+                </figure>
 
-        <p>
-            Ceci est une liste <strong>non-exhaustive</strong> des aliments préférés de Momiji.<br/>
-        </p>
-        <ol><!--création d'une liste ordonnée ou énumération-->
-            <li>Les claquettes Adidas de Kevin</li>
-            <li>Les charentaises de Kevin</li>
-            <li>La sacoche Nike de Kevin</li>
-            <li>Les vêtements de Kevin</li>
-            <li>Du carton pour emmerder Kevin</li>
-            <li>Bien d'autres encore...</li>
-        </ol>
+                <p>
+                    Ceci est une liste <strong>non-exhaustive</strong> des aliments préférés de Momiji.<br/>
+                </p>
+                <ol><!--création d'une liste ordonnée ou énumération-->
+                    <li>Les claquettes Adidas de Kevin</li>
+                    <li>Les charentaises de Kevin</li>
+                    <li>La sacoche Nike de Kevin</li>
+                    <li>Les vêtements de Kevin</li>
+                    <li>Du carton pour emmerder Kevin</li>
+                    <li>Bien d'autres encore...</li>
+                </ol>
+            </article>
+        </section>        
     
     </body>
 </html>
